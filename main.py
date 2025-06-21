@@ -11,11 +11,11 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_ID = "28117961"
-API_HASH = "2bb5c1043b2ba87d3e77ec5f0e842330"
-BOT_TOKEN = "7528038237:AAHarAsEF2CShs-_H0_aILP-4VZmRL0RaSo"
-FROM_CHANNEL = [-1001249849547, -1001759295501]
-TO_CHANNEL_USERNAME = "@CineUpZone"
+API_ID = "29112823"
+API_HASH = "cc2dc4952b0de509014ebf4c266d63f5"
+BOT_TOKEN = "7917136466:AAGBCFvB-oLDdhvM0B-vjJDign_KAwCIsjU"
+FROM_CHANNEL = [-1001304469351]
+TO_CHANNEL_USERNAME = "@MBotupdates"
 
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 ia = IMDb()
@@ -42,7 +42,7 @@ recent_files = {}
 recent_series = {}
 movie_qualities = {}
 
-TIME_WINDOW = 4
+TIME_WINDOW = 7
 
 async def send_with_delay(chat_id, text, reply_markup=None):
     await asyncio.sleep(1)
@@ -157,8 +157,12 @@ async def forward_message(client, message):
 
                 caption += "━━━━━━━━━━━━\n<i>Just copy the name👇and paste it here</i>"
 
-                search_url = "https://telegram.me/+ayuDsvaXZIY0Yjcx"
-                search_button = InlineKeyboardMarkup([[InlineKeyboardButton("@FlimSageBot", url=search_url)]])
+                search_url = "https://t.me/+Ddx2A-Ho0HViYTAx"
+                xyz_url = "https://t.me/StreeXDBot"
+                search_button = InlineKeyboardMarkup([[
+                    InlineKeyboardButton("Request Group", url=search_url),
+                    InlineKeyboardButton("Request Bot", url=xyz_url)
+                ]])
 
                 if poster_url:
                     try:

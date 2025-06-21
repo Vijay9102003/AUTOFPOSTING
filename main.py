@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 API_ID = "29112823"
 API_HASH = "cc2dc4952b0de509014ebf4c266d63f5"
 BOT_TOKEN = "7917136466:AAGBCFvB-oLDdhvM0B-vjJDign_KAwCIsjU"
-FROM_CHANNEL = [-1001304469351]
+FROM_CHANNEL = [-1001482954152]
 TO_CHANNEL_USERNAME = "@MBotupdates"
 
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
